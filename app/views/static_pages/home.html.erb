@@ -1,3 +1,6 @@
-Hi
-
-
+<%= line_chart @data1, discrete: true%>
+<%= line_chart @data2, discrete: true%>
+<%= line_chart [
+  {name: "Avg_Full_Price", data: @data1},
+  {name: "Qty_Eq", data: @data2}
+], discrete: true %>
